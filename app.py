@@ -127,5 +127,5 @@ def main():
             gemini_answer = gemini_qa(transcribed_text, question)
             st.write(gemini_answer)
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
