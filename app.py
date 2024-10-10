@@ -9,7 +9,7 @@ import tempfile
 import requests
 
 GEMINI_API_ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent"
-GEMINI_API_KEY = "AIzaSyBMJT1PyIXrZKH3e3bGuWPDlsStKz5gRPk"  # Replace with your actual API key
+GEMINI_API_KEY = "AIzaSyBMJT1PyIXrZKH3e3bGuWPDlsStKz5gRPk"  
 
 def convert_to_wav(audio_file_path):
     audio = AudioSegment.from_file(audio_file_path)
