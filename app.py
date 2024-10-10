@@ -7,9 +7,10 @@ from pydub.silence import split_on_silence
 from io import BytesIO
 import tempfile
 import requests
+import os
 
 GEMINI_API_ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent"
-GEMINI_API_KEY = "AIzaSyBMJT1PyIXrZKH3e3bGuWPDlsStKz5gRPk"  
+api_key = os.getenv('API_KEY')  
 
 def convert_to_wav(audio_file_path):
     audio = AudioSegment.from_file(audio_file_path)
